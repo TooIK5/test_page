@@ -1,0 +1,802 @@
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+body {
+  margin: 0;
+  background: #F2F2F2;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+legend {
+  padding: 0;
+}
+
+.singUp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 665px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #FFFFFF;
+}
+
+.singUpFormBlock {
+  position: relative;
+  padding: 39px 22.5px 0 20.8px;
+  width: 100%;
+}
+
+.singUpForm__svg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+}
+
+.singUpForm__path {
+  stroke-dasharray: 2020;
+  -webkit-animation: dash 3.5s ease-in-out alternate;
+          animation: dash 3.5s ease-in-out alternate;
+}
+
+.nationalityField {
+  cursor: pointer;
+}
+
+.formUpperText__heading {
+  font-family: "WorkSans-Medium";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 100;
+  letter-spacing: -0.55px;
+}
+
+.formUpperText__subHeading {
+  font-family: "WorkSans-Light";
+  font-size: 14px;
+  line-height: 0;
+  letter-spacing: -0.15px;
+}
+
+.formUpperText .subHeadingBlock {
+  margin-top: -1.5px;
+  padding-bottom: 1.5px;
+}
+
+.control .fieldSet__day,
+.control .fieldSet__month,
+.control .fieldSet__year,
+.control .firstnameField,
+.control .lastNameField,
+.control .inputEmail,
+.control .nationalityField {
+  font-family: "WorkSans-Medium";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.control .firstnameField,
+.control .lastNameField,
+.control .inputEmail,
+.control .confirmPassField,
+.control .passField {
+  background: transparent;
+}
+
+.genderControl__radio {
+  vertical-align: bottom;
+  margin: 0 0 0 -1px;
+  cursor: pointer;
+}
+
+.fieldLable {
+  padding-bottom: 4px;
+  font-family: "WorkSans-Light";
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7C7C;
+}
+
+.fieldSet__lable {
+  padding-bottom: 5.3px;
+  font-family: "WorkSans-Light";
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7C7C;
+}
+
+.fields {
+  display: grid;
+  gap: 0px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 17px;
+  grid-template-areas: "a b" "c d" "f g" "e v" "n h";
+}
+
+.fields input,
+.fields select {
+  border: 0;
+  border-bottom: 0.7px solid #F2F2F2;
+}
+
+.fields input:focus,
+.fields select:focus {
+  outline: none;
+}
+
+.fields--hide {
+  display: none;
+}
+
+.a {
+  grid-area: a;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.e {
+  grid-area: e;
+}
+
+.b {
+  grid-area: b;
+}
+
+.v {
+  grid-area: v;
+}
+
+.h {
+  grid-area: h;
+}
+
+.n {
+  grid-area: n;
+}
+
+.inputEmail__redLabel,
+.lastnameField__redLabel,
+.passField__redLabel,
+.confirmPassField__redLabel,
+.firstnameField__redLabel {
+  font-family: "WorkSans-Light";
+  font-size: 12px;
+  line-height: 14px;
+  color: red;
+  display: none;
+  height: 0;
+}
+
+.singUpForm--showBlock {
+  display: block !important;
+}
+
+.control {
+  padding-bottom: 16.18px;
+}
+
+.control .fieldSet {
+  width: 234.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fieldSet__day {
+  min-width: 56px;
+  padding-bottom: 6.1px;
+  cursor: pointer;
+}
+
+.fieldSet__month {
+  margin: 0 9.8px 0 9.8px;
+  min-width: 91px;
+  padding-bottom: 6.1px;
+  cursor: pointer;
+}
+
+.fieldSet__year {
+  min-width: 67.67px;
+  padding-bottom: 6.1px;
+  cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/triangle.svg") no-repeat right center;
+}
+
+.genderControl {
+  font-family: "WorkSans-Medium";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.genderControl label + label {
+  margin-left: 15.7px;
+}
+
+.genderControl label {
+  display: inline-block;
+}
+
+.singUpForm__submitBtn {
+  font-family: "PTS55F";
+  color: #FFFFFF;
+  background: #5A61ED;
+  border: 0.5px solid #FFFFFF;
+  border-bottom: 0;
+  height: 32px;
+  width: 154px;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.btnAnimation {
+  -webkit-animation: vibro 0.5s linear;
+          animation: vibro 0.5s linear;
+}
+
+.bottomText {
+  position: absolute;
+  left: 158px;
+  font-family: "WorkSans-Light";
+  font-size: 13px;
+  line-height: 15px;
+  top: 421px;
+  letter-spacing: -0.1px;
+}
+
+.confirmLable {
+  letter-spacing: -0.2px;
+}
+
+.submitBtn {
+  position: absolute;
+  right: 22px;
+  bottom: 33px;
+}
+
+.singUpForm--invalidInput {
+  border-bottom: 0.7px solid red !important;
+  color: red !important;
+}
+
+.successTxt {
+  position: absolute;
+  left: 63.8px;
+  top: 217px;
+  height: auto;
+  display: none;
+}
+
+.successTxt__heading {
+  font-family: "WorkSans-Medium";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 100;
+  letter-spacing: -0.8px;
+}
+
+.successTxt__subText {
+  font-family: "WorkSans-Light";
+  font-size: 14px;
+  height: 14px;
+  line-height: 0;
+  letter-spacing: -0.1px;
+  margin-top: 17px;
+}
+
+.singUpForm--fieldWidth {
+  width: 234.5px;
+  padding-bottom: 6.1px;
+}
+
+.singUpText {
+  min-width: 137.2px;
+  background: #5A61ED;
+}
+
+.signUpText__heading {
+  font-family: "PTS55F";
+  position: absolute;
+  top: 296px;
+  left: 68.5px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 63px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+.a {
+  opacity: 0;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.b {
+  opacity: 0;
+  -webkit-animation-delay: 0.5s !important;
+          animation-delay: 0.5s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.c {
+  opacity: 0;
+  -webkit-animation-delay: 1s !important;
+          animation-delay: 1s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.d {
+  opacity: 0;
+  -webkit-animation-delay: 1.5s !important;
+          animation-delay: 1.5s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.f {
+  opacity: 0;
+  -webkit-animation-delay: 2s !important;
+          animation-delay: 2s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.g {
+  opacity: 0;
+  -webkit-animation-delay: 2.5s !important;
+          animation-delay: 2.5s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.e {
+  opacity: 0;
+  -webkit-animation-delay: 3s !important;
+          animation-delay: 3s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.v {
+  opacity: 0;
+  -webkit-animation-delay: 3.5s !important;
+          animation-delay: 3.5s !important;
+  -webkit-animation: opacity 0.5s linear alternate;
+          animation: opacity 0.5s linear alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 2020;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2020;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes vibro {
+  0% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+
+  25% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+
+  50% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+
+  75% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes vibro {
+  0% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+
+  25% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+
+  50% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+
+  75% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@font-face {
+  font-family: "PTS55F";
+  font-display: swap;
+  src: url("../fonts/PTS55F.woff") format("woff"), url("../fonts/PTS55F.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTS75F";
+  font-display: swap;
+  src: url("../fonts/PTS75F.woff") format("woff"), url("../fonts/PTS75F.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  font-display: swap;
+  src: url("../fonts/WorkSans-Bold.woff") format("woff"), url("../fonts/WorkSans-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  font-display: swap;
+  src: url("../fonts/WorkSans-Medium.woff") format("woff"), url("../fonts/WorkSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Light";
+  font-display: swap;
+  src: url("../fonts/WorkSans-Light.woff") format("woff"), url("../fonts/WorkSans-Light.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .signUpText__heading {
+    font-size: 44px;
+    position: relative;
+    top: auto;
+    bottom: 22px;
+    left: auto;
+  }
+
+  .wrapper .bottomText {
+    position: absolute;
+    left: 20.5vw;
+  }
+
+  .wrapper .singUpText {
+    min-width: 17.886vw;
+  }
+
+  .wrapper .singUpText__wrapp {
+    position: relative;
+    margin-top: 330px;
+    float: right;
+  }
+
+  .wrapper .singUp {
+    width: 84.635vw;
+  }
+
+  .wrapper .singUp .singUpForm--fieldWidth {
+    width: 29vw;
+  }
+
+  .wrapper .singUp .firstnameField,
+  .wrapper .singUp .genderControl,
+  .wrapper .singUp .lastNameField,
+  .wrapper .singUp .inputEmail,
+  .wrapper .singUp .nationalityField {
+    font-size: 12px;
+  }
+
+  .wrapper .singUp .fieldSet {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .wrapper .singUp .fieldSet__day {
+    font-size: 12px;
+    min-width: 20px;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
+
+  .wrapper .singUp .fieldSet__month {
+    font-size: 12px;
+    margin: 0 0 0 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 70px;
+    margin: 0 10px 0 10px;
+  }
+
+  .wrapper .singUp .fieldSet__year {
+    font-size: 12px;
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    min-width: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .singUp .submitBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 33px;
+  }
+
+  .singUp .bottomText {
+    font-size: 12px;
+  }
+
+  .singUp .singUpFormBlock {
+    padding: 39px 10px 0 10px;
+  }
+
+  .singUp .fields .singUpForm--fieldWidth {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper .singUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .wrapper .singUpForm__submitBtn {
+    font-size: 18px;
+    height: 40px;
+  }
+
+  .wrapper .subHeadingBlock {
+    margin-top: 5px;
+    line-height: 15px;
+  }
+
+  .wrapper .singUp {
+    width: 100%;
+    position: relative;
+    left: initial;
+    top: initial;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    min-width: auto;
+    height: 100vh;
+    min-height: 783px;
+    max-height: 100vh;
+  }
+
+  .wrapper .singUp .firstnameField,
+  .wrapper .singUp .genderControl,
+  .wrapper .singUp .lastNameField,
+  .wrapper .singUp .inputEmail,
+  .wrapper .singUp .nationalityField,
+  .wrapper .singUp .fieldSet__day,
+  .wrapper .singUp .fieldSet__month,
+  .wrapper .singUp .fieldSet__year {
+    font-size: 14px;
+  }
+
+  .wrapper .singUp .bottomText {
+    position: absolute !important;
+    top: 650px;
+    font-size: 14px;
+    left: 10px;
+  }
+
+  .wrapper .singUp .singUpText {
+    max-height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .wrapper .singUp .singUpText .singUpText__wrapp {
+    margin: 0 0 0 0;
+    float: none;
+  }
+
+  .wrapper .singUp .singUpText .singUpText__wrapp .signUpText__heading {
+    font-size: 42px;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+
+  .wrapper .singUp .formUpperText .subHeadingBlock {
+    height: 18px;
+    font-size: 3vw;
+  }
+
+  .wrapper .singUp .singUpFormBlock {
+    width: calc(100% - 20px);
+  }
+
+  .wrapper .singUp .singUpFormBlock .fields {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c" "d" "f" "g" "e" "v" "n" "h";
+  }
+
+  .wrapper .singUp .singUpFormBlock .fields .singUpForm--fieldWidth {
+    width: 100%;
+  }
+
+  .wrapper .singUp .singUpFormBlock .singUpForm__svg {
+    top: 300px;
+  }
+
+  .wrapper .singUp .singUpFormBlock .submitBtn {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin: 100px 0 0 10px;
+  }
+
+  .wrapper .singUp .singUpFormBlock .submitBtn .singUpForm__submitBtn {
+    width: 100%;
+  }
+}
